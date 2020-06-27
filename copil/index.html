@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index copil</h1>
+    <table border="1" cellspacing="2" cellpadding="2">
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Heading 1</th>
+                <th scope="col">Heading 2</th>
+                <th scope="col">Heading 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="3">Row heading</th>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+            </tr>
+            <tr>
+                <th scope="row">Row Heading 2</th>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <caption> titlu tabela</caption>
+    <br>
+    <br>
+
+    <!-- <form action="" method="GET">
+        <input type="text">
+        <input type="email" placeholder="Email">
+        <input type="password">
+        <input type="button" value="ceva">
+        <input type="date">
+        <input type="number">
+        <input type="checkbox">
+        <input type="file">
+        <input type="radio">
+    </form> -->
+
+    <form action="index.html" method="GET">
+        <p>
+            <label for="user">Username</label>
+            <input id="user" name="uname" type="text" placeholder="Username">
+        </p>
+        <p>
+            <label for="fname">First Name</label>
+            <input id="fname" name="fullname" type="text" placeholder="Firstname">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email">
+        </p>
+        <p>
+            Gender
+            <br>
+            <label>
+                <input name="gender" type="radio" value="F">F
+            </label>
+            <br>
+            <label>
+                <input name="gender" type="radio" value="M">M
+            </label>
+            <br>
+            <label>
+                <input name="gender" type="radio" value="Other">Other
+            </label>
+            <br>
+            <br>
+
+
+            Checkbox
+            <br>
+            <label>
+                <input name="terms" type="checkbox" value="F">Check 1
+            </label>
+            <br>
+            <label>
+                <input name="news" type="checkbox" value="M">Check2
+            </label>
+        </p>
+
+        <button type="submit">Trimite</button>
+    </form>
+</body>
+</html>
