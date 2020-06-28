@@ -8,11 +8,8 @@
         fieldset {
           border-style: solid;
           border-width: 1px;
-          height: 400px;
           width: 450px;
           padding: 10px;
-          padding-top: 12px;
-          padding-bottom: 12px;
         }
     </style>
 </head>
@@ -90,45 +87,41 @@
     <fieldset>
         <legend>Ask us about planets</legend>
         <form action="index.html" method="GET">
-            <p>
-                <label for="fname">Full name:</label>
-                <input id="fname" name="name" type="text" required>
-            </p>
-            <p>
-                <label for="em">Email:</label>
-                <input id="em" name="email" type="email" required>
-            </p>
+            <label>
+                Full name: <input name="name" type="text" required>
+            </label> <br> <br>
+            <label>
+                Email: <input name="email" type="email" required>
+            </label>
 
-            <p>
-                <p>Favorite planet:</p>
-                <label>
-                    <input name="planet" type="radio" value="mercury">Mercury
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="venus">Venus
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="earth" checked="checked">Earth
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="mars">Mars
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="jupiter">Jupiter
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="saturn">Saturn
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="uranus">Uranus
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="neptune">Neptune
-                </label> <br>
-                <label>
-                    <input name="planet" type="radio" value="pluto">Pluto
-                </label> <br>
-            </p>
+            <p>Favorite planet:</p>
+            <label>
+                <input name="planet" type="radio" value="mercury">Mercury
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="venus">Venus
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="earth" checked="checked">Earth
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="mars">Mars
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="jupiter">Jupiter
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="saturn">Saturn
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="uranus">Uranus
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="neptune">Neptune
+            </label> <br>
+            <label>
+                <input name="planet" type="radio" value="pluto">Pluto
+            </label> <br> <br>
 
             <label>
                 <input name="agree" type="checkbox" value="on" required>I agree to the <a href="https://www.w3schools.com/">terms and conditions</a>
