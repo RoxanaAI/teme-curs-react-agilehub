@@ -3,61 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title> 
+    <title>Tema_1</title> 
+    <style>
+        fieldset {
+          border-style: solid;
+          border-width: 1px;
+          height: 400px;
+          width: 450px;
+          padding: 10px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Titlu</h1>
-    <h1>Titlu</h1>
-    <h2>Subtitlu</h2>
-    <h6>6th level heading</h6>
+    <h1>Planets</h1>
 
-    <p> 
-        Acesta este un paragraf
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quasi voluptatum assumenda a. Ullam quasi a quibusdam, nobis doloremque vel exercitationem itaque, obcaecati quam sunt animi aliquam, enim corrupti nesciunt.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quasi voluptatum assumenda a. Ullam quasi a quibusdam, nobis doloremque vel exercitationem itaque, obcaecati quam sunt animi aliquam, enim corrupti nesciunt.
-    </p>
+    <!-- Tabela Planets -->
+    <table border="1" cellspacing="2" cellpadding="2">
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                <th scope="col">Diameter (km)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" colspan="2">Terrestrial planets</th>
+                <td style="text-align:center"> <b>Mercury</b> </td>
+                <td>0.330</td>
+                <td>4,879</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"> <b>Venus</b> </td>
+                <td>4.87</td>
+                <td>12,104</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"> <b>Earth</b> </td>
+                <td>5.97</td>
+                <td>12,756</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"> <b>Mars</b> </td>
+                <td>0.642</td>
+                <td>6,792</td>
+            </tr>
 
-    <a href="https://www.google.com">google</a>
-    <a href="index.thml">Home</a>
-    <a href="../copil">Copil</a>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Jovian planets</th>
+                <th scope="rowgroup" rowspan="2" colspan="1" >Gas giants</th>
+                <td style="text-align:center"> <b>Jupiter</b> </td>
+                <td>1898</td>
+                <td>142,984</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"> <b>Saturn</b> </td>
+                <td>568</td>
+                <td>120,536</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Ice giants</th>
+                <td style="text-align:center"> <b>Uranus</b> </td>
+                <td>86.8</td>
+                <td>51,118</td>
+            </tr>
+            <tr>
+                <td style="text-align:center"> <b>Neptune</b> </td>
+                <td>102</td>
+                <td>49,528</td>
+            </tr>
 
-    <blockquote>citate de orice fel</blockquote>
-
-    <ul>
-        <li> <strong> Element </strong> din lista 1</li>
-        <li>Element din <em> lista </em> 2</li>
-        <li>Element din lista 3</li>
-        <li>Element din lista 4</li>
-        <li>Element din lista 5</li>
-    </ul>
-
-    <ol type="i">
-        <li>Lista ordonata 1</li>
-        <li>Lista ordonata 2</li>
-        <li>Lista ordonata 3</li>
-        <li>Lista ordonata 3</li>
-        <li>Lista ordonata 3</li>
-        <li>Lista ordonata 3</li>
-    </ol>
-
-    <dl>
-        <dt>Browser</dt>
-        <dt>Al doilea termen</dt>
-        <dd>browser is</dd>
-        <dd>second definition</dd>
-    </dl>
-
-    <!-- comment -->
-    <div>divisipon of page <span> bucati de text inline fara seminifacite</span> 
-    </div>
-    <span>alt span</span>
-
-    <table>
-
+            <tr>
+                <th colspan="2">Dwarf planets</th>
+                <td style="text-align:center"> <b>Pluto</b></td>
+                <td>0.0146</td>
+                <td>2,370</td>
+            </tr>
+        </tbody>
     </table>
+    <br>
+
+    <!-- Form Planets -->
+    <fieldset>
+        <legend>Ask us about planets</legend>
+        <form action="index.html" method="GET">
+            <p>
+                <label for="fname">Full name:</label>
+                <input id="fname" name="name" type="text" required>
+            </p>
+            <p>
+                <label for="em">Email:</label>
+                <input id="em" name="email" type="email" required>
+            </p>
+
+            Favorite planet:
+            <p>
+                <label>
+                    <input name="planet" type="radio" value="mercury">Mercury
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="venus">Venus
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="earth" checked="checked">Earth
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="mars">Mars
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="jupiter">Jupiter
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="saturn">Saturn
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="uranus">Uranus
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="neptune">Neptune
+                </label> <br>
+                <label>
+                    <input name="planet" type="radio" value="pluto">Pluto
+                </label> <br>
+            </p>
+
+            <label>
+                <input name="agree" type="checkbox" value="on" required>I agree to the <a href="https://www.w3schools.com/">terms and conditions</a>
+            </label> <br> <br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Ask away</button>
+        </form>
+    </fieldset>
 </body>
 </html>
