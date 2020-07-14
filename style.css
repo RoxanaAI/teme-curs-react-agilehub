@@ -38,6 +38,8 @@ body {
 }
 
 .modal-header {
+    display: block;
+
     height: 50px;
 
     border-bottom-color:rgb(229, 229, 229);
@@ -54,6 +56,8 @@ body {
 }
 
 .modal-footer {
+    display: block;
+
     height: 50px;
 
     border-top-color:rgb(229, 229, 229);
@@ -96,16 +100,19 @@ button {
     border-width: thin;
     border-radius: 3px;
 
-    position: relative;
+    position: inherit;
     right: 5px;
+    top: 50%;
 }
 
 button.btn-login {
     background-color: #bada55;
-    color: darkgreen;
+    color: darkgreen;    
 }
 
 button.close {
+    float: right;
+
     background-color: #333;
     color: #fff;
 
@@ -114,16 +121,12 @@ button.close {
     border-radius: 15px;
 
     font-size: 15px;
-
-    float: right;
     padding: 0px;
-
-    position: inherit;
-    right: 50px;
-    top: 50px;
 }
 
 h4 {
+    float: left;
+
     font-size: 20px;
     padding-left: 5px;
 }
