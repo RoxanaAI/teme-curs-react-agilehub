@@ -3,61 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title> 
+    <title>Tema2 - CSS MODAL</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Titlu</h1>
-    <h1>Titlu</h1>
-    <h2>Subtitlu</h2>
-    <h6>6th level heading</h6>
 
-    <p> 
-        Acesta este un paragraf
-    </p>
     <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quasi voluptatum assumenda a. Ullam quasi a quibusdam, nobis doloremque vel exercitationem itaque, obcaecati quam sunt animi aliquam, enim corrupti nesciunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus veritatis quis rem culpa cum, 
+        laudantium voluptate quaerat nobis doloremque voluptatem et libero consequatur est, ipsum eaque 
+        ducimus! Eligendi, deleniti officiis.
     </p>
+
     <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quasi voluptatum assumenda a. Ullam quasi a quibusdam, nobis doloremque vel exercitationem itaque, obcaecati quam sunt animi aliquam, enim corrupti nesciunt.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus veritatis quis rem culpa cum, 
+        laudantium voluptate quaerat nobis doloremque voluptatem et libero consequatur est, ipsum eaque 
+        ducimus! Eligendi, deleniti officiis.
     </p>
 
-    <a href="https://www.google.com">google</a>
-    <a href="index.thml">Home</a>
-    <a href="../copil">Copil</a>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus veritatis quis rem culpa cum, 
+        laudantium voluptate quaerat nobis doloremque voluptatem et libero consequatur est, ipsum eaque 
+        ducimus! Eligendi, deleniti officiis.
+    </p>
 
-    <blockquote>citate de orice fel</blockquote>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
-    <ul>
-        <li> <strong> Element </strong> din lista 1</li>
-        <li>Element din <em> lista </em> 2</li>
-        <li>Element din lista 3</li>
-        <li>Element din lista 4</li>
-        <li>Element din lista 5</li>
-    </ul>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Login</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button> 
+            </div>
 
-    <ol type="i">
-        <li>Lista ordonata 1</li>
-        <li>Lista ordonata 2</li>
-        <li>Lista ordonata 3</li>
-        <li>Lista ordonata 3</li>
-        <li>Lista ordonata 3</li>
-        <li>Lista ordonata 3</li>
-    </ol>
+            <div class="modal-body">
+                <div>
+                    <label for="uname">Username</label>
+                    <input type="text" placeholder="Username" name="uname" required>    
+                </div>
+              
+                <div>
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Password" name="psw" required>    
+                </div>
+               </div>
 
-    <dl>
-        <dt>Browser</dt>
-        <dt>Al doilea termen</dt>
-        <dd>browser is</dd>
-        <dd>second definition</dd>
-    </dl>
+            <div class="modal-footer">
+                <button type="button" class="btn-cancel">Cancel</button>
+                <button type="button" class="btn-login">Login</button>
+            </div>
 
-    <!-- comment -->
-    <div>divisipon of page <span> bucati de text inline fara seminifacite</span> 
+        </div>
+
     </div>
-    <span>alt span</span>
-
-    <table>
-
-    </table>
+    
 </body>
+
 </html>
