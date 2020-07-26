@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-left: 6rem;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(32, 32, 32);
+    height: 100vh;
+}
+
+.navbar:hover span {
+    display: inline;
+}
+
+.navbar:hover .navbar-title svg {
+    display: none;
+}
+
+.navbar-anchor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+.navbar-anchor:hover {
+    color: white;
+}
+
+.navbar-anchor:hover svg {
+    color: pink;    
+}
+
+.navbar-anchor span {
+    display: none;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    margin-left: auto; /* help justify-content distribute the items */
+    margin-right: auto; /* help justify-content distribute the items */
+}
+
+.navbar-anchor svg {
+    width: 4.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style-type: none;
+}
+
+.navbar-menu li:hover {
+    background-color: rgb(75, 75, 75);
+}
+
+.navbar-menu li:last-child {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.navbar-title {
+    background-color: black;
+}
+
+.navbar-title span {
+    display: none;
+    padding: 0;
+}
