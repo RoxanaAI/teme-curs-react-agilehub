@@ -3,6 +3,8 @@
 
     padding: 0;
     margin: 0;
+
+    background-color: black;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 
 .main-nav {
     list-style-type: none;
-    /* display: none; */
+    display: none;
 }
 
 .nav-links,
@@ -52,8 +54,16 @@ body {
     display: block;
 }
 
+.icon {
+    background-color: #FDA30E;
+    color: white;
+    padding: 5px;
+    width: 15px;
+    border-radius: 3px;
+}
+
 @media screen and (min-width: 768px) {
-    .navbar {
+    .navbar > {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -88,12 +98,4 @@ body {
     .nav-links:hover {
         color: white;
     }
-}
-
-.icon {
-    background-color: #FDA30E;
-    color: white;
-    padding: 5px;
-    width: 15px;
-    border-radius: 3px;
 }
