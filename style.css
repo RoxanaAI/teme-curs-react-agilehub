@@ -68,6 +68,10 @@ ul.multi-column-dropdown li a {
     display: block;
 }
 
+.not-active {
+    display: none;
+}
+
 .icon {
     background-color: #FDA30E;
     color: white;
