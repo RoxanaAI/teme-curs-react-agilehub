@@ -41,6 +41,8 @@ body {
     padding: 10px;
 
     width: fit-content;
+
+    display: none;
 }
 
 ul.multi-column-dropdown li a {
@@ -66,10 +68,6 @@ ul.multi-column-dropdown li a {
 
 .active {
     display: block;
-}
-
-.not-active {
-    display: none;
 }
 
 .icon {
