@@ -5,16 +5,17 @@
     margin: 0;
 
     background-color: black;
+
+    font-size: 15px;
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.navbar {
-    font-size: 18px;
+.navbar > {
     background-color: black;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
 }
 
@@ -24,21 +25,34 @@ body {
 }
 
 .nav-links,
-.logo {
+.dropdown-menu-toggle,
+.dropdown-menu,
+.main-nav.dropdown-menu.a {
     text-decoration: none;
     color:white;
+    padding: 5px;
+}
+
+.dropdown-menu-list{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 10px;
+
+    padding: 10px;
+
+    width: fit-content;
+}
+
+ul.multi-column-dropdown li a {
+    text-decoration: none;
+    color: #8E8E8E;
+
+    font-size: 12px;
 }
 
 .main-nav li {
     text-align: center;
     margin: 15px auto;
-}
-
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
 }
 
 .navbar-toggle {
@@ -60,6 +74,17 @@ body {
     padding: 5px;
     width: 15px;
     border-radius: 3px;
+}
+
+.triunghi {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }
 
 @media screen and (min-width: 768px) {
