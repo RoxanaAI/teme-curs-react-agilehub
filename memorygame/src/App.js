@@ -40,7 +40,7 @@ function App() {
           <img src={ imageUrl } alt="cover" onClick={handleClick} />
         </div>
       </div>
-       <button className="btn btn-primary" onClick={handlePlayAgain}>Play Again</button>
+       <button className="button btn-primary" onClick={handlePlayAgain}>Play Again</button>
     </div>
   );
 }
