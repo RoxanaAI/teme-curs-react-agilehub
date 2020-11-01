@@ -16,3 +16,18 @@ let dropdownWomenToggle = document.getElementById('js-dropdown-toggle_wowmen');
 dropdownWomenToggle.addEventListener('click', function () {
   dropdownWomen.classList.toggle('active');
 });
+
+function test1() {
+  console.log(a);
+  var a = 10;
+}
+
+// function test2() {
+//   console.log(a);
+//   let a = 10;
+// }
+
+// const a = 10;
+// function test3() {
+//   console.log(a);
+// }
