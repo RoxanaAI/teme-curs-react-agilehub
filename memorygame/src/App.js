@@ -1,5 +1,7 @@
 import './App.css';
 import React, { useState } from 'react'
+// import useModal from './useModal';
+// import Modal from './Modal';
 
 function App() {
   // initial state
@@ -7,6 +9,7 @@ function App() {
   var currentIndex = -1;    
   const coverUrl = "https://www.brandcrowd.com/gallery/brands/pictures/picture15574683467192.jpg";
   const [elements, setElements] = useState(startGame());
+  // const {modalProps, openModal} = useModal();
 
   function startGame(){
     const lion = "https://pbs.twimg.com/profile_images/1105895900696715264/5Bla3W39_400x400.png";
@@ -35,6 +38,7 @@ function App() {
 
     var currentElement = elements[index];
     currentElement.displayUrl = currentElement.url;
+    // openModal();
     setTimeout(() => {
       console.log('Displayed image behind cover')
     }, 1000);
@@ -68,9 +72,10 @@ function App() {
 
   return (
     <div className="App">
+      <div>
       <div className="card-box w3-border">
         <div className="card">
-            <img src={elements[0].displayUrl} alt="cover" width="300" onClick={() => handleClick(0)}  />
+            <img src={elements[0].displayUrl} alt="cover" width="300" onClick={() => handleHide(0)}  />
         </div>
         <div className="card">
           <img src={ elements[1].displayUrl } alt="cover" width="300" onClick={() => handleClick(1)} />
@@ -94,7 +99,15 @@ function App() {
           <img src={ elements[7].displayUrl } alt="cover" width="300" onClick={() => handleClick(7)} />
         </div>
       </div>
-       <button className="button btn-primary" onClick={handlePlayAgain}>Play Again</button>
+      <button className="button btn-primary" onClick={handlePlayAgain}>Play Again</button>
+      </div>
+
+       
+       {/* <Modal {...modalProps} title="" >
+          <div className="">
+            <img src={elements[0].displayUrl} alt="cover" width="300" onClick={() => handleHide(0)}  />
+          </div>
+       </Modal> */}
     </div>
   );
 }
