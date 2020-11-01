@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  function handleClick() {
+    console.log("img click");
+  }
+
+  function handlePlayAgain() {
+    console.log("play again click");
+  }
+
+  const imageUrl = "https://www.brandcrowd.com/gallery/brands/pictures/picture15574683467192.jpg";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="card-box w3-border">
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+        <div className="card">
+          <img src={ imageUrl } alt="cover" onClick={handleClick} />
+        </div>
+      </div>
+       <button className="btn btn-primary" onClick={handlePlayAgain}>Play Again</button>
     </div>
   );
 }

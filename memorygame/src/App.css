@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
@@ -22,6 +23,22 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.card-box {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+  width: 300;
+  align-content: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: #282c34;
+  padding-bottom: 20px;
 }
 
 .App-link {
