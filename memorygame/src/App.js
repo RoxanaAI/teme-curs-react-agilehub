@@ -75,7 +75,7 @@ function App() {
       <div>
       <div className="card-box w3-border">
         <div className="card">
-            <img src={elements[0].displayUrl} alt="cover" width="300" onClick={() => handleHide(0)}  />
+            <img src={elements[0].displayUrl} alt="cover" width="300" onClick={() => handleClick(0)}  />
         </div>
         <div className="card">
           <img src={ elements[1].displayUrl } alt="cover" width="300" onClick={() => handleClick(1)} />
